@@ -86,11 +86,13 @@ textarea {
 
 .content-wrapper {
   width: 90%;
+  margin: 50px 0;
 }
-
+/********** Headers and Footers **********/
 header {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 header .content-wrapper {
@@ -98,10 +100,23 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+header .logo {
+  width: 100%;
+  text-align: center;
+}
+
+.header-divider
+{
+  width: 100%;
+  border-top: 1px solid #3a3a3a;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
-  width: 100%;
+  width: 60%;
 }
 
 header nav ul {
@@ -109,6 +124,7 @@ header nav ul {
   list-style-type: none;
   justify-content: space-around;
   padding: 0;
+  width: 100%;
 }
 
 footer {
@@ -118,6 +134,17 @@ footer {
   text-align: center;
 }
 
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer h4 {
+  margin: 20px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
 
 footer .social-icons {
   display: flex;
@@ -130,19 +157,44 @@ footer .social p {
   justify-content: center;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/********** Mobile Homepage **********/
+
 .hero-area {
   display: flex;
   justify-content: center;
 }
 
-aside .content-wrapper {
+aside {
   display: flex;
   justify-content: center;
 }
 
+.form-description p {
+  margin-bottom: 30px;
+}
 .features {
   display: flex;
   justify-content: center;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+.features article {
+  text-align: center;
+  width: 60%;
+  margin: 30px 0;
+}
+.fontawesome-icon {
+  margin-bottom: 40px;
 }
 
 .features .features-items {
@@ -152,10 +204,25 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
 }
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
+/********** Mobile About Page **********/
 
 .mission {
   display: flex;
@@ -167,9 +234,19 @@ aside .content-wrapper {
   justify-content: center;
 }
 
+.contact-content {
+  margin: 0;
+}
+
+/********** Mobile FAQ Page **********/
+
 .faq {
   display: flex;
   justify-content: center;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
 }
 
 .faq .content-wrapper {
@@ -177,6 +254,11 @@ aside .content-wrapper {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin-bottom: 50px 0 0 0;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 
