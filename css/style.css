@@ -92,7 +92,6 @@ textarea {
 header {
   display: flex;
   justify-content: center;
-  padding: 15px;
 }
 
 header .content-wrapper {
@@ -101,6 +100,7 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  padding: 15px 0;
 }
 
 header .logo {
@@ -343,9 +343,12 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
+/*
+==========================================================
+  ********** Tablet Styles *********
+==========================================================
+*/
 @media only screen and (min-width: 768px) {
-  /*********** Tablet Styles **********/
-
   /*
   =======================
   Genernal Styles
@@ -360,6 +363,7 @@ aside {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+    padding: 33px 0;
   }
 
   header .logo {
@@ -368,7 +372,6 @@ aside {
 
   header nav {
     width: 20%;
-    padding: 33px 0;
   }
 
   header nav ul {
@@ -485,8 +488,82 @@ aside {
   }
 }
 
+/*
+==========================================================
+  ********* Desktop Styles *********
+==========================================================
+*/
 @media only screen and (min-width: 1200px) {
-  /********** Desktop Styles **********/
+  /*
+  =======================
+  Genernal Styles
+  =======================
+  */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  header .content-wrapper {
+    padding: 15px 0;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+  /*
+  =======================
+  Homepage Styles
+  =======================
+  */
+
+  .hero-area h1 {
+    width: 85%;
+  }
+  /********** Desktop - Aside **********/
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+    margin: 0;
+  }
+
+  /********** Desktop - Features **********/
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .features-item-description {
+    width: 50%;
+  }
+
+  /********** Desktop - Reviews **********/
+  .reviews article div {
+    width: 42%;
+  }
+
+  /*
+  =======================
+  About Styles
+  =======================
+  */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+  }
+
+  /*
+  =======================
+  FAQ Styles
+  =======================
+  */
 }
 
 /* ==========================================================================
