@@ -86,17 +86,19 @@ textarea {
 /*********** General Styles **********/
 html {
   font-size: 1rem;
-  color: #e2e3ed;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -146,6 +148,7 @@ address {
 header {
   display: flex;
   justify-content: center;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -179,11 +182,18 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
@@ -202,6 +212,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.3em;
 }
 
 footer .social p {
@@ -227,6 +238,33 @@ footer p {
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .form-description p {
@@ -247,6 +285,7 @@ aside {
 }
 .fontawesome-icon {
   margin-bottom: 40px;
+  font-size: 3.75em;
 }
 
 .features .features-items {
@@ -263,10 +302,12 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -279,11 +320,13 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .contact-content {
@@ -295,10 +338,12 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq .content-wrapper {
@@ -306,11 +351,15 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  margin-bottom: 50px 0 0 0;
+  margin-bottom: 0;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.33;
 }
 
 /* ==========================================================================
@@ -412,6 +461,22 @@ aside {
     margin: 100px 0;
   }
 
+  h1 {
+    font-size: 3em;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.33;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   /*** Header ***/
   header .content-wrapper {
     width: 100%;
@@ -452,6 +517,7 @@ aside {
 
   footer h4 {
     margin-bottom: 40px;
+    font-size: 1.5em;
   }
 
   /*
@@ -497,6 +563,15 @@ aside {
     width: 49%;
   }
 
+  .reviews h2 {
+    width: 80%;
+    line-height: 1.33;
+  }
+
+  .reviews h3 {
+    width: 75%;
+  }
+
   /*
   =======================
   About Page Styles
@@ -523,6 +598,10 @@ aside {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /*
   =======================
   FAQ Page Styles
@@ -530,6 +609,7 @@ aside {
   */
   .faq .content-wrapper {
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .faq-content {
@@ -538,6 +618,13 @@ aside {
 
   .faq h2 {
     width: 100%;
+    line-height: 1.33;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 1.125;
   }
 }
 
@@ -563,6 +650,25 @@ aside {
   footer .content-wrapper {
     width: 100%;
   }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.3333;
+  }
+
   /*
   =======================
   Homepage Styles
@@ -597,28 +703,41 @@ aside {
   }
 
   /********** Desktop - Reviews **********/
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+
   .reviews article div {
     width: 42%;
   }
 
   /*
-  =======================
-  About Styles
-  =======================
-  */
+    =======================
+    About Styles
+    =======================
+    */
 
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 90%;
+    font-size: 3em;
   }
 
   /*
-  =======================
-  FAQ Styles
-  =======================
-  */
-}
+    =======================
+    FAQ Styles
+    =======================
+    */
+  .faq h2 {
+    font-size: 3em;
+  }
 
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
