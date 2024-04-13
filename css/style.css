@@ -131,9 +131,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
@@ -161,7 +163,7 @@ header .content-wrapper {
 }
 
 header .logo {
-  width: 100%;
+  width: 60%;
   text-align: center;
 }
 
@@ -233,6 +235,9 @@ footer p {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url("../img/unplugged-retreat.jpg") center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 aside {
@@ -273,6 +278,8 @@ input[type="button"] {
 .features {
   display: flex;
   justify-content: center;
+  background: url("../img/unplugged-retreat-features.jpg") center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -485,7 +492,7 @@ input[type="button"] {
   }
 
   header .logo {
-    width: 45%;
+    width: 33%;
   }
 
   header nav {
@@ -525,6 +532,13 @@ input[type="button"] {
   Homepage Styles
   =======================
   */
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    margin: 0;
+  }
 
   /*** Aside - Form ***/
 
@@ -570,6 +584,11 @@ input[type="button"] {
 
   .reviews h3 {
     width: 75%;
+    margin: 0;
+  }
+
+  .reviews figure {
+    width: 49%;
   }
 
   /*
@@ -609,7 +628,7 @@ input[type="button"] {
   */
   .faq .content-wrapper {
     justify-content: space-between;
-    margin-top: 0;
+    margin-top: 50px;
   }
 
   .faq-content {
@@ -699,7 +718,7 @@ input[type="button"] {
   }
 
   .features-item-description {
-    width: 50%;
+    width: 63%;
   }
 
   /********** Desktop - Reviews **********/
