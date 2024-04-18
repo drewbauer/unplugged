@@ -306,6 +306,11 @@ input[type="button"] {
   margin: 0;
 }
 
+.features i {
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -734,6 +739,10 @@ input[type="button"] {
 
   .features article {
     flex-basis: 33%;
+  }
+
+  .features i {
+    font-size: 1.25em;
   }
 
   .features-item-description {
