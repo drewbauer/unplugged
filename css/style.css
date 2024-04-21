@@ -220,6 +220,11 @@ footer .social-icons {
 footer .social p {
   display: flex;
   justify-content: center;
+  background-color: #527158;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 footer .copyright {
@@ -345,6 +350,7 @@ input[type="button"] {
   margin: 0;
 }
 
+/***** Manually configure map area*****/
 /*.map figure {
   position: relative;
   padding-bottom: 125%;
@@ -547,6 +553,10 @@ input[type="button"] {
     font-size: 1.5em;
   }
 
+  .social {
+    width: 45%;
+  }
+
   /*
   =======================
   Homepage Styles
@@ -710,6 +720,10 @@ input[type="button"] {
   p {
     font-size: 1.125em;
     line-height: 1.3333;
+  }
+
+  .social {
+    width: 25%;
   }
 
   /*
